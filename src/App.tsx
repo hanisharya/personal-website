@@ -1,24 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+// @ts-ignore
+// const word = require('./assets/HanishArya.docx');
+import word from './assets/HanishArya.docx';
+// @ts-ignore
+import pdf from './assets/HanishArya.pdf';
+// const pdf = require('./assets/HanishArya.pdf');
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div>
+      <div className="typewriter name">Hanish Arya</div>
+      <div className="subtitle fade-in-subtitle">Scrum Master | Change Agent | Agile Delivery Lead</div>
+      <div className="content fade-in">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+        Hanish is an experienced Scrum Master who enjoys building, and continuously improving, high performing teams (results-driven, cross functional, diverse, self-organizing) to deliver valuable and quality outcomes for customers using a consistent and sustainable cadence across both complex projects and BAU work. An Agile enthusiast with ability to lead, motivate, organize, and coach Scrum teams across different geographies.  
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <p>
+        His strength involves utilizing the breadth and depth of his experience in a pragmatic way to transform both Agile teams and the organization to achieve goals to delight our customers.
+        </p>
+      </div>
+      <div className="resumeRow fade-in">
+        <a href={word}>
+          <div className="resumeLink">WORD</div>
         </a>
-      </header>
+        <a href={pdf} target="_blank" rel="noreferrer">
+          <div className="resumeLink">PDF</div>
+        </a>
+      </div>
     </div>
   );
 }
